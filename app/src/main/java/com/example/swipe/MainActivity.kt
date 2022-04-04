@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         var list=ArrayList<String>()
 
          viewPager= this.findViewById<TestViewPager>(R.id.viewPager)
+
+        //bottom is is for vertical scroll view
         val displayMetrics: DisplayMetrics = resources.displayMetrics
         val density = displayMetrics.density
         var translation = 45f
@@ -80,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onPageScrollStateChanged(state: Int) {
                 viewPagerState=state
-                Toast.makeText(this@MainActivity, "moved", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@MainActivity, "moved", Toast.LENGTH_SHORT).show()
             }
 
         })

@@ -23,7 +23,7 @@ class adap(var context: Context,var list:List<String>): RecycledPagerAdapter<Vie
             }
 
     override fun onBindViewHolder(viewHolder: ViewHolder1?, position: Int) {
-        viewHolder?.redner(list[position],position)
+        viewHolder?.redner("https://media.geeksforgeeks.org/wp-content/uploads/20201217163353/Screenrecorder-2020-12-17-16-32-03-350.mp4")
     }
 
 
